@@ -1,5 +1,6 @@
 package com.fundamentals.academy.ori.tapcounter;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -20,5 +21,9 @@ public class MainActivity extends AppCompatActivity {
     public void increaseNumber(View view) {
         counter++;
         counter_tv.setText(String.valueOf(counter));
+    }
+
+    public void openSecondActivity(View view) {
+        SecondActivity.start(this, counter);
     }
 }

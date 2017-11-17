@@ -3,4 +3,5 @@
     <string name="tap">TAP</string>
     <string name="initial_counter">0</string>
     <string name="initial_counter_value">0</string>
+    <string name="second_activity_button_text">SHOW</string>
 </resources>

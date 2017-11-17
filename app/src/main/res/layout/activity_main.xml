@@ -1,21 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.fundamentals.academy.ori.tapcounter.MainActivity"
-    android:padding="10dp">
+    tools:context="com.fundamentals.academy.ori.tapcounter.MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/tv_counter"
+        android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:text="@string/initial_counter_value"
-        android:textSize="@dimen/counter_text_size"
-        android:id="@+id/tv_counter"/>
+        android:textAlignment="center"
+        android:textSize="@dimen/counter_text_size" />
 
     <Button
         android:layout_width="match_parent"
@@ -23,7 +22,19 @@
         android:layout_weight="1"
         android:textSize="@dimen/counter_text_size"
         android:text="@string/tap"
-        android:onClick="increaseNumber"/>
+        android:onClick="increaseNumber"
+        android:padding="0dp"
+        android:layout_margin="0dp"
+        android:background="@color/firstButton"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textSize="@dimen/counter_text_size"
+        android:text="@string/second_activity_button_text"
+        android:onClick="openSecondActivity"
+        android:background="@color/secondButton"/>
 
 
 </LinearLayout>
